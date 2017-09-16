@@ -29,4 +29,11 @@ def position_taken(board, index)
   end
 end
 
-    
+#VALID MOVE?
+def valid_move?(board, index)
+  if !position_taken(bpard, index) && index.between?(0, 8)
+    return true
+  else
+    return false
+  end
+end
